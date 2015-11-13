@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/common_margin_layout">
+
+    <ImageView
+        android:id="@+id/btnSpeak"
+        android:layout_width="@dimen/card_button_speak_size"
+        android:layout_height="@dimen/card_button_speak_size"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/item_background_click"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/img_btn_card_speak" />
+
+    <TextView
+        android:id="@+id/tvPhonetically"
+        style="@style/card_phonetically"
+        android:layout_alignBottom="@id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:textStyle="bold|italic"
+        android:textColor="@color/bright_red"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">English Vocabulary</string>
+    <string name="no_card">Không có thẻ từ nào. Hãy mở ứng dụng trên di động để đồng bộ hóa dữ liệu!</string>
+    <string name="load_data">Đang nạp thẻ!</string>
+
+</resources>

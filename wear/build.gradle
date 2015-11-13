@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+
+    defaultConfig {
+        applicationId "com.thanhle.englishvocabulary"
+        minSdkVersion 20
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file("../keystore/keystore.jks")
+            storePassword "Admin123"
+            keyAlias "englishvocabulary"
+            keyPassword "Admin123"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFiles 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.android.support:wearable:+'
+    compile 'com.google.android.gms:play-services-wearable:+'
+}

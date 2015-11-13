@@ -1,0 +1,32 @@
+<resources>
+    <dimen name="card_radius">10dp</dimen>
+    <dimen name="card_border">0.5dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    
+    <dimen name="card_word_text_size">38sp</dimen>
+    <dimen name="card_mean_text_size">30sp</dimen>
+    <dimen name="card_phonetically_text_size">15sp</dimen>
+    <dimen name="card_word_type_text_size">15sp</dimen>
+    <dimen name="card_word_type_margin">10sp</dimen>
+    <dimen name="card_word_margin_left_right">10dp</dimen>
+    <dimen name="card_phonetically_margin_bottom">10dp</dimen>
+    <dimen name="card_button_speak_size">40dp</dimen>
+    
+    <dimen name="card_margin_left1">10dp</dimen>
+    <dimen name="card_margin_left2">15dp</dimen>
+    <dimen name="card_margin_left3">20dp</dimen>
+    <dimen name="card_margin_right1">20dp</dimen>
+    <dimen name="card_margin_right2">15dp</dimen>
+    <dimen name="card_margin_right3">10dp</dimen>
+    <dimen name="card_margin_top1">10dp</dimen>
+    <dimen name="card_margin_top2">15dp</dimen>
+    <dimen name="card_margin_top3">20dp</dimen>
+    <dimen name="card_margin_bottom1">20dp</dimen>
+    <dimen name="card_margin_bottom2">15dp</dimen>
+    <dimen name="card_margin_bottom3">10dp</dimen>
+
+    <dimen name="card_round_speak_margin">25dp</dimen>
+    <dimen name="card_round_type_margin">35dp</dimen>
+    <dimen name="card_round_phonetically_margin_bottom">15dp</dimen>
+    <dimen name="card_round_word_padding">10dp</dimen>
+</resources>

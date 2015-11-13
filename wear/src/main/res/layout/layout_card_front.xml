@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/rlCardBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/card_margin_bottom1"
+        android:layout_marginLeft="@dimen/card_margin_left1"
+        android:layout_marginRight="@dimen/card_margin_right1"
+        android:layout_marginTop="@dimen/card_margin_top1"
+        android:background="@drawable/img_card_background"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/btnCardSpeak"
+            android:layout_width="@dimen/card_button_speak_size"
+            android:layout_height="@dimen/card_button_speak_size"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/img_btn_card_speak" />
+
+        <TextView
+            android:id="@+id/tvCardWordType"
+            style="@style/card_word_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_word_type_margin"
+            android:layout_marginTop="@dimen/card_word_type_margin" />
+
+        <TextView
+            android:id="@+id/tvCardPhonetically"
+            style="@style/card_phonetically"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/card_phonetically_margin_bottom" />
+
+        <com.thanhle.englishvocabulary.AutoResizeTextView
+            android:id="@+id/tvCardWord"
+            style="@style/card_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tvCardPhonetically"
+            android:layout_below="@id/tvCardWordType"
+            android:layout_marginLeft="@dimen/card_word_margin_left_right"
+            android:layout_marginRight="@dimen/card_word_margin_left_right"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

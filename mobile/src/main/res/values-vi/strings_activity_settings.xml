@@ -1,0 +1,43 @@
+<resources>
+        <string name="title_activity_settings">Cấu hình</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Chung</string>
+
+    <string name="pref_title_card_theme">Màu nền thẻ từ vựng</string>
+
+    <string name="pref_title_display_name">Tên hiển thị</string>
+    <string name="pref_default_display_name">Người dùng thử</string>
+
+    <string-array name="pref_card_theme_list">
+        <item>Màu nền mặc đình</item>
+        <item>Màu nền 1</item>
+        <item>Màu nền 2</item>
+        <item>Màu nền 3</item>
+        <item>Màu nền 4</item>
+        <item>Màu nền 5</item>
+        <item>Màu nền 6</item>
+        <item>Màu nền 7</item>
+    </string-array>
+
+    <string-array name="pref_card_theme_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Thông báo</string>
+
+    <string name="pref_title_new_word_notifications">Thông báo từ mới</string>
+    <string name="pref_title_wear_notifications">Thông báo lên đồng hồ Android</string>
+
+
+</resources>

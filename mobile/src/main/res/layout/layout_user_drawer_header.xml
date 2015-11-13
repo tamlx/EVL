@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_board"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal">
+
+        <com.thanhle.englishvocabulary.view.circluarimageview.CircularImageView
+            android:id="@+id/imgUserAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/common_margin_layout_medium"
+            app:border="true"
+            app:border_width="2dp" />
+
+
+        <TextView
+            android:id="@+id/tv_username_layout_user_drawer_header"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

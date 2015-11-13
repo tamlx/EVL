@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#eeeeee</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_text_color">#000000</color>
+    <color name="card_border">#000000</color>
+    <color name="dark_gray">#8e8e93</color>
+    <color name="blue">#247FA0</color>
+    <color name="green">#8FCC85</color>
+    <color name="bright_blue">#33B5E5</color>
+    <color name="bright_red">#FF7575</color>
+    <color name="bright_red_darker">#CC5E5E</color>
+    <color name="overlay_color">#CC000000</color>
+    
+    <color name="board_color">#16a085</color>
+	<color name="button_background_color">#0097cc</color>
+	<color name="button_background_disable_color">#9b9b9b</color>	
+
+	<color name="progress_bar_rim_color">#44000000</color>	
+	<color name="progress_bar_color_blue">#339BB9</color>	
+	<color name="progress_bar_color_red">#FF7575</color>	
+	<color name="progress_bar_color_green">#8FCC85</color>	
+	<color name="home_test_button_color">#FF7575</color>	
+</resources>

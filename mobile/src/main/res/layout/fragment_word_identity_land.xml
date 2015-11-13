@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:background="@drawable/img_board" >
+
+        <ImageView
+            android:id="@+id/btnSpeak"
+            android:layout_width="@dimen/wordidentity_small_speak_size"
+            android:layout_height="@dimen/wordidentity_small_speak_size"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/wordidentity_small_speak_margin"
+            android:src="@drawable/img_btn_test_speaker"
+            android:visibility="gone" />
+
+        <com.thanhle.englishvocabulary.view.TypingTextView
+            android:id="@+id/tvPosition"
+            style="@style/wordidentity_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin_layout_medium"
+            android:gravity="left" />
+
+        <com.thanhle.englishvocabulary.view.TextViewAutoResizeSingleline
+            android:id="@+id/tvWord"
+            style="@style/wordidentity_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/wordidentity_word_text_margin"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            style="@style/test_timer"
+            android:layout_width="@dimen/test_timer_size"
+            android:layout_height="@dimen/test_timer_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/common_margin_layout_medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/wordidentity_answer_frame_margin"
+        android:layout_weight="1.2" >
+
+        <LinearLayout
+            android:id="@+id/viewAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/llAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/viewAd"
+            android:layout_marginTop="@dimen/wordidentity_answer_frame_margin"
+            android:orientation="vertical"
+            android:weightSum="4" >
+
+            <include
+                android:id="@+id/rlAnswer1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/wordidentity_answer_frame_margin"
+                android:layout_marginLeft="@dimen/wordidentity_answer_frame_margin"
+                android:layout_marginRight="@dimen/wordidentity_answer_frame_margin"
+                android:layout_weight="1"
+                layout="@layout/layout_answer_button"
+                tools:ignore="NestedWeights" />
+
+            <include
+                android:id="@+id/rlAnswer2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/wordidentity_answer_frame_margin"
+                android:layout_marginLeft="@dimen/wordidentity_answer_frame_margin"
+                android:layout_marginRight="@dimen/wordidentity_answer_frame_margin"
+                android:layout_weight="1"
+                layout="@layout/layout_answer_button" />
+
+            <include
+                android:id="@+id/rlAnswer3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/wordidentity_answer_frame_margin"
+                android:layout_marginLeft="@dimen/wordidentity_answer_frame_margin"
+                android:layout_marginRight="@dimen/wordidentity_answer_frame_margin"
+                android:layout_weight="1"
+                layout="@layout/layout_answer_button" />
+
+            <include
+                android:id="@+id/rlAnswer4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/wordidentity_answer_frame_margin"
+                android:layout_marginLeft="@dimen/wordidentity_answer_frame_margin"
+                android:layout_marginRight="@dimen/wordidentity_answer_frame_margin"
+                android:layout_weight="1"
+                layout="@layout/layout_answer_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

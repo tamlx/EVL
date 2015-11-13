@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thanhle.englishvocabulary.activity.TestDictionaryActivity">
+
+    <EditText
+        android:id="@+id/etWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnLookup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lookup"
+        android:layout_below="@id/etWord"/>
+
+    <ExpandableListView
+        android:id="@+id/listView"
+        android:layout_below="@id/btnLookup"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_below="@id/btnLookup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/not_found" />
+
+</RelativeLayout>

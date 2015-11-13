@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">English Vocabulary</string>
+
+    <!-- Activity title-->
+    <string name="title_activity_test_dictionary">Dictionary</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Menu text -->
+    <string name="menu_setting">Setting</string>
+    <string name="menu_rate">Rate app</string>
+    <string name="menu_share_fb">Facebook</string>
+    <string name="menu_share_google">Google Plus</string>
+    <string name="menu_remove_ads">Remove Ads</string>
+
+    <!-- Button -->
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="purchase">Purchase</string>
+    <string name="resume_test">Resume Test</string>
+    <string name="test_result">Result</string>
+    <string name="test_again">Do again</string>
+    <string name="test_next">Next test</string>
+    <string name="test_done">Done</string>
+    <string name="lookup">Lookup</string>
+    <string name="word_test">Test</string>
+    <string name="word_pick">Pick new word</string>
+    <string name="word_practice">Practice</string>
+    <string name="word_library">Word library</string>
+    <string name="or">Or</string>
+    <string name="processing">Processing...</string>
+    <string name="logout">Logout</string>
+
+    <!-- Text -->
+    <string name="test_next_status">Perfect!</string>
+    <string name="test_done_status">Congratulations!</string>
+    <string name="test_result_all_label">All Test</string>
+    <string name="test_result_current_label">Current Test</string>
+    <string name="word_list_count">Number of words: %1$s\nStudied words: %2$s</string>
+    <string name="word_phrase">Phrase</string>
+    <string name="word_specific">Specific</string>
+    <string name="not_found">Not found</string>
+    <string name="search_hint">Enter word</string>
+    <string name="my_library">My Library</string>
+    <string name="add_word_library_hint">Click any word\'s mean to add this word to My Library</string>
+    <string name="loading_voice">Loading speech voices</string>
+    <string name="loading_dictionary">Loading dictionary</string>
+
+    <plurals name="test_again_status">
+        <item quantity="one">You forget %1$s word.\nIt will be added to the list of new word.</item>
+        <item quantity="other">You forget %1$s words.\nThey will be added to the list of new word.</item>
+    </plurals>
+
+    <string name="change">Chance left:  %1$s</string>
+    <string name="studying">Studied</string>
+    <string name="forget">New</string>
+
+    <plurals name="auto_add">
+        <item quantity="one">Auto add %1$s word</item>
+        <item quantity="other">Auto add %1$s words</item>
+    </plurals>
+
+    <string name="question_position">Question: %1$s</string>
+    <string name="select_card_hint">You must select at least 10 words to start learning</string>
+    <string name="test_part_1">Part 1: Read and select the correct answer</string>
+    <string name="test_part_2">Part 2: Listen and select the correct answer</string>
+    <string name="test_part_3">Part 3: Write the correct word</string>
+
+    <!-- Message in app -->
+    <string name="msg_finish_choose_word">Finish choosing word. Press OK to continue learning</string>
+    <string name="msg_ask_exit_test">Do you want to cancel this test?</string>
+    <string name="msg_learn_all_words">You have learned all words in current version.</string>
+    <string name="msg_wait_load_card">Loading cards. Please wait a minute!</string>
+    <string name="msg_has_purchase">You have purchased this application!</string>
+    <string name="msg_add_card_success">Add word to library successfully!</string>
+    <string name="msg_ask_exit_app">Do you want to exit application?</string>
+    <string name="msg_err_email_exists">That email is exists</string>
+    <string name="msg_err_email_empty">Email is empty</string>
+    <string name="msg_err_email_invalid">Email is invalid</string>
+    <string name="msg_err_password_empty">Password is empty</string>
+    <string name="msg_err_password_not_match">Password is not match</string>
+    <string name="msg_err_password_incorrect">Password is not correct</string>
+    <string name="msg_err_username_empty">Username is empty</string>
+    <string name="msg_err_username_exists">Username is exists</string>
+    <string name="msg_err_username_not_exists">Username is not exists</string>
+
+    <!-- Rate app dialog -->
+    <string name="rate_dialog_title">Rate this app</string>
+    <string name="rate_dialog_message">If you enjoy playing this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+    <string name="rate_dialog_ok">Rate It Now</string>
+    <string name="rate_dialog_cancel">Remind Me Later</string>
+    <string name="rate_dialog_no">No, Thanks</string>
+
+    <!-- Add Card dialog -->
+    <string name="add_card_dialog_title">Add word to my library</string>
+    <string name="add_card_dialog_ok">Add word</string>
+    <string name="add_card_dialog_cancel">Cancel</string>
+
+    <!-- Guide -->
+    <string name="guide_option_menu">Show guide</string>
+    <string name="guide_swipe_up">Swipe up to move to next card</string>
+    <string name="guide_swipe_down">Swipe down to move to previous card</string>
+    <string name="guide_swipe_right">Swipe right to study this card</string>
+    <string name="guide_click_see_mean">Touch to see word\'s mean</string>
+    <string name="guide_click_auto_add">Touch to auto add words</string>
+    <string name="guide_word_board">WORD BOARD</string>
+    <string name="guide_word_board_desc">WORD BOARD\n\nWord Board is a list of vocabulary words you have learned up to now, in that, the larger the size of the words the more you forget the most. Word Board helps you have an overview of the entire vocabulary that you have learned!</string>
+    <string name="guide_flashcard">FLASHCARDS</string>
+    <string name="guide_top_information">INFOMATION BOARD</string>
+    <string name="guide_top_information_desc">INFOMATION BOARD\n\nStudied: the number of vocabulary.\nNew: the number of new words not check.\n\nWhen each time you do the test, the words you did wrong (forget) will be automatically added to the new list, so that you can review to examine later</string>
+    <string name="guide_finish">You have finished the Guideline. Next, you should learn new words before doing Test.\n\nDo not forget to rate this application and shared for everyone to know.</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_facebook">Login via Facebook</string>
+    <string name="login_google">Login via Google+</string>
+    <string name="login_new_account">If you don\'t have an account. Register</string>
+    <string name="login_button">Login</string>
+    <string name="login_forget_password">Forget password?</string>
+
+    <!-- Register -->
+    <string name="register_title">Register Vole Account</string>
+    <string name="register_email">Email</string>
+    <string name="register_username">Username</string>
+    <string name="register_password">Password</string>
+    <string name="register_password_again">Enter password again</string>
+    <string name="register_login">Already have an account? Login</string>
+    <string name="register_button">Register</string>
+    <string name="register_policy">By clicking on “Register” beside, you are agreeing to the Terms of Service. Note: e-mail will not be publicly displayed.</string>
+
+    <!--UpdateProfile-->
+    <string name="update_profile_title">User Information</string>
+    <string name="update_profile_username">Enter your new name</string>
+    <string name="update_profile_oldpassword">Old password</string>
+    <string name="update_profile_newpassword">New password</string>
+    <string name="update_profile_confirmpassword">Confirm password</string>
+    <string name="update_profile_btndone">Done</string>
+    <string name="update_profile_enter_username">Enter name</string>
+    <string name="update_profile_enter_password">Enter password</string>
+    <string name="update_profile_library_name">Library Name: </string>
+    <string name="update_profile_number_word_learn">Words Learn: </string>
+    <string name="update_profile_number_word_forget">Words Forget</string>
+    <string name="update_profile_dialog_title">Change Password</string>
+
+
+    <!-- Menu navigation-->
+    <string name="navigation_item1">User Info</string>
+    <string name="navigation_item2">Change Library</string>
+    <string name="navigation_item3">Online Library</string>
+    <string name="navigation_item4">Logout</string>
+
+
+    <!-- List library-->
+    <string name="library_activity_title">Library Information</string>
+
+    <!-- Menu array string -->
+    <string-array name="array_navigation">
+        <item>Change User Info</item>
+        <item>Change Library</item>
+        <item>Search Library</item>
+        <item>Settings</item>
+        <item>-</item>
+    </string-array>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_library">Search Library</string>
+
+    <string name="fb_id">915368025218009</string>
+    <string name="title_activity_list_library">List Library</string>
+    <string name="error_search_library">Cannot find library</string>
+
+
+    <string name="not_connect_internet">Cannot connect internet</string>
+    <string name="getlist_library_error">Cannot get list library, please check your connect internet</string>
+    <string name="tv_thongtintaikhoan">User Info</string>
+    <string name="tv_tendangnhap">Username</string>
+    <string name="tv_loginfacebook">User Login Via Facebook Account</string>
+    <string name="tv_logingoogle">User Login Via Google Account</string>
+    <string name="tv_userfullname">Fullname</string>
+    <string name="tv_changepassword">Change Password</string>
+
+    <!-- cash message-->
+    <string name="crash_toast_text">Ooooops ! I crashed, but a report has been sent to my developer to help him fix the issue !</string>
+    <string name="crash_notif_ticker_text">Unexpected error, please send a report...</string>
+    <string name="crash_notif_title">EnglishVocabulary has crashed...</string>
+    <string name="crash_notif_text">Please click here to help fix the issue.</string>
+
+    <string name="crash_dialog_title">EnglishVocabulary has crashed</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the
+        application to stop. Please help us fix this by sending us error data,
+        all you have to do is click \'OK\'.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_dialog_ok_toast">Thank you !</string>
+    <string name="network_error">Cannot connect internet!</string>
+    <string name="connect_error">Cannot connect to server, please try again.</string>
+    <string name="library_download_title">Download Library</string>
+
+
+</resources>

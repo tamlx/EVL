@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.thanhle.englishvocabulary.fragment.DictionaryDrawerFragment"
+    android:padding="@dimen/common_margin_layout_medium"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/btnLookup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button"
+        android:padding="@dimen/common_margin_layout_medium"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:text="@string/lookup" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btnLookup"
+        android:layout_alignBottom="@id/btnLookup"
+        android:layout_alignTop="@id/btnLookup"
+        android:layout_marginRight="@dimen/common_margin_layout_medium"
+        android:background="@drawable/search_background">
+
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_btn_delete"
+            android:background="@drawable/item_background_click"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/common_margin_layout_medium"
+            android:paddingRight="@dimen/common_margin_layout_medium" />
+
+        <AutoCompleteTextView
+            android:id="@+id/etWord"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/btnDelete"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/common_margin_layout_medium"
+            android:hint="@string/search_hint"
+            android:background="@null"
+            android:paddingRight="@dimen/common_margin_layout_medium"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/rlWordDesc"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btnLookup"
+        android:layout_height="wrap_content"
+        layout="@layout/item_list_dictionary_header" />
+
+    <ExpandableListView
+        android:id="@+id/listView"
+        android:layout_below="@id/rlWordDesc"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_below="@id/btnLookup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="@string/not_found" />
+</RelativeLayout>

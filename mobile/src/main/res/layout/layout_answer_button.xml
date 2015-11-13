@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlAnswer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/common_margin_layout"
+    android:background="@drawable/button_frame" >
+
+    <TextView
+        android:id="@+id/tvAlphabet"
+        android:layout_width="@dimen/answer_alphabet_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_alphabet_frame"
+        android:gravity="center"
+        android:padding="@dimen/common_margin_layout_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_textsize_xlarge"
+        android:textStyle="bold" />
+
+    <com.thanhle.englishvocabulary.view.TextViewAutoResizeSingleline
+        android:id="@+id/tvAnswer"
+        style="@style/wordidentity_answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/common_margin_layout"
+        android:paddingLeft="@dimen/common_margin_layout_medium"
+        android:paddingRight="@dimen/common_margin_layout_medium"
+        android:paddingTop="@dimen/common_margin_layout"
+        android:layout_toRightOf="@id/tvAlphabet"
+        android:gravity="center_vertical" />
+
+</RelativeLayout>

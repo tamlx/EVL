@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/wordidentity_answer_frame_margin"
+        android:layout_weight="0.8"
+        android:background="@drawable/img_board" >
+
+        <TextView
+            android:id="@+id/tvChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/common_margin_layout"
+            android:background="@drawable/change_frame"
+            android:padding="@dimen/common_margin_layout"
+            android:textColor="@color/white" />
+
+        <com.thanhle.englishvocabulary.view.TypingTextView
+            android:id="@+id/tvPosition"
+            style="@style/wordidentity_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin_layout_medium"
+            android:layout_toLeftOf="@id/tvChange" />
+
+        <com.thanhle.englishvocabulary.view.TextViewAutoResizeSingleline
+            android:id="@+id/tvWord"
+            style="@style/wordidentity_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/wordidentity_word_text_margin"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            style="@style/test_timer"
+            android:layout_width="@dimen/test_timer_size"
+            android:layout_height="@dimen/test_timer_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/common_margin_layout_medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2" >
+
+        <LinearLayout
+            android:id="@+id/viewAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/viewAd"
+            android:orientation="vertical"
+            android:weightSum="5" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" >
+
+                <com.thanhle.englishvocabulary.view.TextViewAutoResizeSingleline
+                    android:id="@+id/tvQuestion"
+                    style="@style/wordwriting_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/btnSpeak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/wordidentity_small_speak_margin"
+                    android:src="@drawable/img_btn_card_speak"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rlLetter1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/wordwriting_letter_margin"
+                android:layout_marginLeft="@dimen/wordwriting_letter_margin"
+                android:layout_marginRight="@dimen/wordwriting_letter_margin"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:weightSum="5" />
+
+            <LinearLayout
+                android:id="@+id/rlLetter2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/wordwriting_letter_margin"
+                android:layout_marginLeft="@dimen/wordwriting_letter_margin"
+                android:layout_marginRight="@dimen/wordwriting_letter_margin"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:weightSum="5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

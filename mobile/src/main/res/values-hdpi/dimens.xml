@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="common_margin_img_text">2dp</dimen>
+    <dimen name="common_margin_layout">4dp</dimen>
+    <dimen name="common_margin_layout_small">6dp</dimen>
+    <dimen name="common_margin_layout_medium">8dp</dimen>
+    <dimen name="common_margin_layout_xmedium">12dp</dimen>
+    <dimen name="common_margin_layout_xxmedium">14dp</dimen>
+    <dimen name="common_margin_layout_large">16dp</dimen>
+    <dimen name="common_margin_layout_larger">20dp</dimen>
+    <dimen name="common_margin_layout_xlarge">32dp</dimen>
+    <dimen name="common_margin_layout_xlarge2">40dp</dimen>
+    <dimen name="common_margin_layout_xxlarge">50dp</dimen>
+    <dimen name="common_margin_layout_xxlarge2">60dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="common_textsize_smaller">8sp</dimen>
+    <dimen name="common_textsize_small">10sp</dimen>
+    <dimen name="common_textsize_medium">12sp</dimen>
+    <dimen name="common_textsize_large">14sp</dimen>
+    <dimen name="common_textsize_larger">16sp</dimen>
+    <dimen name="common_textsize_xlarge">18sp</dimen>
+    <dimen name="common_textsize_xlarge2">20sp</dimen>
+    <dimen name="common_textsize_xxlarge">24sp</dimen>
+    <dimen name="common_textsize_xxxlarge">32sp</dimen>
+    <dimen name="card_radius">10dp</dimen>
+    <dimen name="card_border">1dp</dimen>
+    <dimen name="card_margin_left1">10dp</dimen>
+    <dimen name="card_margin_left2">15dp</dimen>
+    <dimen name="card_margin_left3">20dp</dimen>
+    <dimen name="card_margin_right1">20dp</dimen>
+    <dimen name="card_margin_right2">15dp</dimen>
+    <dimen name="card_margin_right3">10dp</dimen>
+    <dimen name="card_margin_top2">5dp</dimen>
+    <dimen name="card_margin_top3">10dp</dimen>
+    <dimen name="card_height">200dp</dimen>
+    <dimen name="card_word_text_size">38sp</dimen>
+    <dimen name="card_mean_text_size">30sp</dimen>
+    <dimen name="card_phonetically_text_size">15sp</dimen>
+    <dimen name="card_word_type_text_size">15sp</dimen>
+    <dimen name="card_word_type_margin">10sp</dimen>
+    <dimen name="card_eng_mean_text_size">12sp</dimen>
+    <dimen name="card_word_margin_left_right">10dp</dimen>
+    <dimen name="card_phonetically_margin_top">10dp</dimen>
+    <dimen name="card_eng_mean_margin_top">10dp</dimen>
+    <dimen name="card_eng_mean_margin">10dp</dimen>
+    <dimen name="card_button_speak_size">40dp</dimen>
+    <dimen name="wordidentity_board_land_width_size">320dp</dimen>
+    <dimen name="wordidentity_word_text_size">45sp</dimen>
+    <dimen name="wordidentity_word_text_margin">12dp</dimen>
+    <dimen name="wordidentity_answer_text_size">20sp</dimen>
+    <dimen name="wordidentity_answer_frame_margin">8dp</dimen>
+    <dimen name="wordidentity_answer_frame_border">1dp</dimen>
+    <dimen name="wordidentity_answer_frame_padding">12dp</dimen>
+    <dimen name="wordidentity_small_speak_margin">8dp</dimen>
+    <dimen name="wordidentity_small_speak_size">60dp</dimen>
+    <dimen name="test_timer_text_size">15sp</dimen>
+    <dimen name="test_timer_size">35dp</dimen>
+    <dimen name="answer_alphabet_width">60dp</dimen>
+    <dimen name="wordwriting_letter_margin">12dp</dimen>
+    <dimen name="wordwriting_letter_padding">12dp</dimen>
+    <dimen name="wordwriting_letter_text_size">30sp</dimen>
+    <dimen name="wordwriting_question_text_size">25sp</dimen>
+    <dimen name="wordwriting_question_padding">8dp</dimen>
+    <dimen name="splash_application_name_text_size">40sp</dimen>
+    <dimen name="wordboard_tag_text_size">15sp</dimen>
+    <dimen name="home_top_bar_height">120dp</dimen>
+    <dimen name="home_progress_bar_text_size">12sp</dimen>
+    <dimen name="home_progress_bar_rim_width">15dp</dimen>
+    <dimen name="home_progress_bar_width">20dp</dimen>
+    <dimen name="home_board_top_size">56dp</dimen>
+    <dimen name="home_board_top_padding">8dp</dimen>
+    <dimen name="home_board_margin_top">26dp</dimen>
+    <dimen name="home_test_button_text_size">16sp</dimen>
+    <dimen name="home_pick_button_text_size">14sp</dimen>
+    <dimen name="test_result_progress_size">150dp</dimen>
+    <dimen name="test_result_progress_bar_text_size">23sp</dimen>
+    <dimen name="test_result_progress_bar_rim_width">25dp</dimen>
+    <dimen name="test_result_progress_bar_width">30dp</dimen>
+    <dimen name="card_picker_top_bar_height">90dp</dimen>
+    <dimen name="card_picker_progress_bar_text_size">10sp</dimen>
+    <dimen name="card_picker_progress_bar_rim_width">15dp</dimen>
+    <dimen name="card_picker_progress_bar_width">20dp</dimen>
+    <dimen name="card_picker_description_name_text_size">16sp</dimen>
+    <dimen name="card_picker_description_count_text_size">12sp</dimen>
+    <dimen name="card_picker_guide_text_size">20sp</dimen>
+    <dimen name="card_picker_guide_icon_size">100dp</dimen>
+
+    <dimen name="dictionary_exam_margin_left">12dp</dimen>
+
+</resources>

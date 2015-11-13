@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/btnSelectLibrary"
+        style="@style/home_pick_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_margin_layout_medium"
+        android:layout_marginRight="@dimen/common_margin_layout_medium"
+        android:text="@string/word_library" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btnSelectLibrary"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

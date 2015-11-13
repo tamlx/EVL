@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.thanhle.englishvocabulary.MainActivity" >
+
+    <item
+        android:id="@+id/action_library"
+        android:title="@string/word_library"
+        android:icon="@drawable/img_icon_library"
+        app:showAsAction="ifRoom"/>
+
+</menu>

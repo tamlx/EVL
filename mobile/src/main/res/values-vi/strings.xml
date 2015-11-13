@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Từ Vựng Tiếng Anh</string>
+
+    <!-- Activity title-->
+    <string name="title_activity_test_dictionary">Từ điển</string>
+    <string name="navigation_drawer_open">Mở thanh tra cứu</string>
+    <string name="navigation_drawer_close">Đóng thanh tra cứu</string>
+
+    <!-- Menu text -->
+    <string name="menu_setting">Cấu hình</string>
+    <string name="menu_rate">Đánh giá ứng dụng</string>
+    <string name="menu_share_fb">Facebook</string>
+    <string name="menu_share_google">Google Plus</string>
+    <string name="menu_remove_ads">Gỡ quảng cáo</string>
+
+    <!-- Button -->
+    <string name="ok">Đồng ý</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="next">Tiếp</string>
+    <string name="purchase">Mua</string>
+    <string name="resume_test">Tiếp tục kiểm tra</string>
+    <string name="test_result">Kết quả</string>
+    <string name="test_again">Kiểm tra lại</string>
+    <string name="test_next">Làm bài kiểm tra tiếp theo</string>
+    <string name="test_done">Hoàn thành</string>
+    <string name="lookup">Tra cứu</string>
+    <string name="word_test">Kiểm tra</string>
+    <string name="word_pick">Chọn thêm từ</string>
+    <string name="word_practice">Luyện tập</string>
+    <string name="word_library">Thư viện từ</string>
+    <string name="or">Hoặc</string>
+    <string name="processing">Đang xử lý...</string>
+    <string name="logout">Đăng xuất</string>
+
+    <!-- Text -->
+    <string name="test_next_status">Hoàn hảo!</string>
+    <string name="test_done_status">Xin chúc mừng!</string>
+    <string name="test_result_all_label">Tất cả</string>
+    <string name="test_result_current_label">Đang làm</string>
+    <string name="word_list_count">Số từ: %1$s\nĐã học: %2$s</string>
+    <string name="word_phrase">Cụm từ</string>
+    <string name="word_specific">Chuyên ngành</string>
+    <string name="not_found">Không có dữ liệu</string>
+    <string name="search_hint">Nhập từ</string>
+    <string name="my_library">Thư Viện Từ Của Tôi</string>
+    <string name="add_word_library_hint">Chạm vào bất cứ nghĩa nào của từ để thêm từ này vào Thư Viện Từ Của Tôi</string>
+    <string name="loading_voice">Đang nạp dữ liệu giọng nói</string>
+    <string name="loading_dictionary">Đang nạp dữ liệu từ điển</string>
+
+
+    <plurals name="test_again_status">
+
+        <item quantity="other">Bạn quên %1$s từ.\nChúng sẽ được thêm vào danh sách từ mới.</item>
+    </plurals>
+
+    <string name="change">Số lần sai:  %1$s</string>
+    <string name="studying">Đã học</string>
+    <string name="forget">Từ mới</string>
+
+    <plurals name="auto_add">
+
+        <item quantity="other">Tự động thêm %1$s từ</item>
+    </plurals>
+
+    <string name="question_position">Câu hỏi: %1$s</string>
+    <string name="select_card_hint">Bạn phải chọn ít nhất 10 từ mới để bắt đầu học</string>
+    <string name="test_part_1">Phần 1: Đọc và chọn câu trả lời đúng</string>
+    <string name="test_part_2">Phần 2: Nghe và chọn câu trả lời đúng</string>
+    <string name="test_part_3">Phần 3: Viết lại từ</string>
+
+    <!-- Message in app -->
+    <string name="msg_finish_choose_word">Đã chọn từ xong. Nhấn Đồng Ý để tiếp tục học</string>
+    <string name="msg_ask_exit_test">Bạn có muốn dừng bài kiểm tra này?</string>
+    <string name="msg_learn_all_words">Bạn đã học toàn bộ từ vựng trong phiên bản này.</string>
+    <string name="msg_wait_load_card">Đang tải thẻ từ vựng. Xin chờ một chút!</string>
+    <string name="msg_has_purchase">Bạn đã mua ứng dụng này!</string>
+    <string name="msg_add_card_success">Đã thêm từ vào Thư Viện Từ Của Tôi!</string>
+    <string name="msg_ask_exit_app">Bạn có muốn thoát ứng dụng không?</string>
+    <string name="msg_err_email_exists">Email đã tồn tại</string>
+    <string name="msg_err_email_empty">Email đang trống</string>
+    <string name="msg_err_email_invalid">Email không hợp lệ</string>
+    <string name="msg_err_password_empty">Mật khẩu đang trống</string>
+    <string name="msg_err_password_not_match">Mật khẩu không khớp</string>
+    <string name="msg_err_password_incorrect">Mật khẩu không đúng</string>
+    <string name="msg_err_username_empty">Tên tài khoản đang trống</string>
+    <string name="msg_err_username_exists">Tên tài khoản đã tồn tại</string>
+    <string name="msg_err_username_not_exists">Tên tài khoản không tồn tại</string>
+
+    <!-- Rate app dialog -->
+    <string name="rate_dialog_title">Đánh giá ứng dụng</string>
+    <string name="rate_dialog_message">Nếu bạn cảm thấy thích ứng dụng này, bạn có thể dành chút thời gian để dánh giá ứng dụng này không? Nó sẽ không mất nhiều thời gian cho bạn. Cảm ơn vì sự quan tâm của bạn!</string>
+    <string name="rate_dialog_ok">Đánh giá bây giờ</string>
+    <string name="rate_dialog_cancel">Để sau</string>
+    <string name="rate_dialog_no">Không, Cảm ơn!</string>
+
+    <!-- Add Card dialog -->
+    <string name="add_card_dialog_title">Thêm từ vào thư viện của tôi</string>
+    <string name="add_card_dialog_ok">Thêm từ</string>
+    <string name="add_card_dialog_cancel">Hủy bỏ</string>
+
+    <!-- Guide -->
+    <string name="guide_option_menu">Hiện hướng dẫn</string>
+    <string name="guide_swipe_up">Vuốt lên trên để chuyển đến thẻ tiếp theo</string>
+    <string name="guide_swipe_down">Vuốt xuống dưới để chuyển đến thẻ trước đó</string>
+    <string name="guide_swipe_right">Vuốt sang phải để học thẻ này</string>
+    <string name="guide_click_see_mean">Chạm để xem nghĩa của từ</string>
+    <string name="guide_click_auto_add">Chạm để tự động thêm từ</string>
+    <string name="guide_word_board">BẢNG TỪ VỰNG</string>
+    <string name="guide_word_board_desc">BẢNG TỪ VỰNG\n\nBảng từ vựng là danh sách các từ bạn đã học từ trước đến nay, trong đó, các từ có kích cỡ càng lớn là những từ bạn quên nhiều nhất trong lúc kiểm tra.\n\nBảng từ vựng giúp bạn có cái nhìn khái quát về toàn bộ từ vựng mà mình đã học được!</string>
+    <string name="guide_flashcard">CÁC THẺ TỪ VỰNG ĐANG HỌC</string>
+    <string name="guide_top_information">BẢNG THÔNG TIN</string>
+    <string name="guide_top_information_desc">BẢNG THÔNG TIN\n\nĐã học: số lượng các từ đã học\nTừ mới: số lượng từ mới, từ chưa kiểm tra\n\n**Khi mỗi lần làm bài kiểm tra, những từ vựng bạn làm sai (quên) sẽ được tự động thêm vào danh sách từ mới để bạn ôn tập kiểm tra lại.</string>
+    <string name="guide_finish">Bạn đã hoàn thành phần hướng dẫn sử dụng. Tiếp theo, bạn nên học các từ mới trước khi làm bài kiểm tra nhé!\n\nĐừng quên đánh giá chương trình và chia sẻ cho mọi người cùng biết về ứng dụng này.</string>
+
+    <!-- Login -->
+    <string name="login_title">Đăng nhập</string>
+    <string name="login_username">Tên tài khoản</string>
+    <string name="login_password">Mật khẩu</string>
+    <string name="login_facebook">Đăng nhập bằng Facebook</string>
+    <string name="login_google">Đăng nhập bằng Google+</string>
+    <string name="login_new_account">Tạo tài khoản</string>
+    <string name="login_button">Đăng nhập</string>
+    <string name="login_forget_password">Quên mật khẩu?</string>
+
+    <!-- Register -->
+    <string name="register_title">Đăng ký tài khoản Vole</string>
+    <string name="register_email">Địa chỉ Email</string>
+    <string name="register_username">Tên tài khoản</string>
+    <string name="register_password">Mật khẩu</string>
+    <string name="register_password_again">Nhập lại mật khẩu</string>
+    <string name="register_login">Bạn đã có tài khoản? Đăng nhập</string>
+    <string name="register_button">Đăng ký</string>
+    <string name="register_policy">Bằng việc nhấn Đăng ký, bạn đã đồng ý với những Điều khoản sử dụng dịch vụ của Vole.com</string>
+
+    <!--UpdateProfile-->
+    <string name="update_profile_title">Thông tin cá nhân</string>
+    <string name="update_profile_username">Enter your new name</string>
+    <string name="update_profile_oldpassword">Nhập mật khẩu hiện tại</string>
+    <string name="update_profile_newpassword">Mật khẩu mới</string>
+    <string name="update_profile_confirmpassword">Nhập lại mật khẩu mới</string>
+    <string name="update_profile_btndone">Done</string>
+    <string name="update_profile_enter_username">Enter name</string>
+    <string name="update_profile_enter_password">Enter password</string>
+    <string name="update_profile_library_name">Tên thư viện: </string>
+    <string name="update_profile_number_word_learn">Số từ đã học: </string>
+    <string name="update_profile_number_word_forget">Số từ bị quên</string>
+    <string name="update_profile_dialog_title">Đổi mật khẩu</string>
+
+
+    <!-- Menu navigation-->
+    <string name="navigation_item1">Thông tin cá nhân</string>
+    <string name="navigation_item2">Thay đổi thư viện từ</string>
+    <string name="navigation_item3">Thư viện online</string>
+    <string name="navigation_item4">Đăng xuất</string>
+
+    <string name="not_connect_internet">Không thể kết nối mạng</string>
+    <string name="getlist_library_error">Không thể tải danh sách từ điển, hãy kiểm tra kết nối mạng của bạn</string>
+    <string name="error_search_library">Không tìm thấy từ điển phù hợp</string>
+
+    <string name="tv_thongtintaikhoan">Thông tin tài khoản</string>
+    <string name="tv_tendangnhap">Tên đăng nhập</string>
+    <string name="tv_loginfacebook">Đăng nhập bằng tài khoản facebook</string>
+    <string name="tv_logingoogle">Đăng nhập bằng tài khoản google</string>
+    <string name="tv_userfullname">Tên đầy đủ</string>
+    <string name="tv_changepassword">Đổi mật khẩu</string>
+
+
+    <!-- cash message-->
+    <string name="crash_toast_text">Ooooops ! I crashed, but a report has been sent to my developer to help him fix the issue !</string>
+    <string name="crash_notif_ticker_text">Phát sinh lỗi không mong đợi...</string>
+    <string name="crash_notif_title">EnglishVocabulary gặp phải lỗi...</string>
+    <string name="crash_notif_text">Xin hãy click vào đây để khắc phục.</string>
+
+    <string name="crash_dialog_title">EnglishVocabulary gặp phải lỗi</string>
+    <string name="crash_dialog_text">Trong quá trình chạy ứng dụng đã xuất hiện lỗi không mong muốn. Hãy giúp chúng tôi sửa lỗi này bằng cách gửi lại dữ liệu lỗi,
+        tất cả những gì bạn phải làm là click \'OK\'.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_dialog_ok_toast">Cảm ơn bạn rất nhiều!</string>
+    <string name="network_error">Không thể kết nối mạng!</string>
+
+    <string name="connect_error">Xảy ra lỗi trong quá trình kết nối, xin hãy thử kết nối lại.</string>
+    <string name="library_download_title">Đang tải thư viện...</string>
+
+
+</resources>

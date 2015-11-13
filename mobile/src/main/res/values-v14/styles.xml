@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <style name="progressbar_horizontal" parent="android:Widget.DeviceDefault.ProgressBar.Horizontal" />
+
+
+</resources>

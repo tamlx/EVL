@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="notifications_new_word"
+        android:title="@string/pref_title_new_word_notifications"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="notifications_wear"
+        android:title="@string/pref_title_wear_notifications"
+        android:defaultValue="true" />
+
+</PreferenceScreen>

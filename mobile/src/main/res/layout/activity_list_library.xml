@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thanhle.englishvocabulary.activity.ListLibraryActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBarListLibrary"
+        style="@style/progressbar_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/common_margin_layout_medium"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoadingListLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progressBarListLibrary"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"></include>
+
+        <ListView
+            android:id="@+id/list_library"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            ></ListView>
+    </LinearLayout>
+
+
+</RelativeLayout>

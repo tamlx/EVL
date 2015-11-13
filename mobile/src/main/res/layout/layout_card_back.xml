@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlCardBody"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/card_margin_left1"
+        android:layout_marginRight="@dimen/card_margin_right1"
+        android:background="@drawable/img_card_background"
+        tools:ignore="UselessParent" >
+
+        <TextView
+            android:id="@+id/tvCardExam"
+            style="@style/card_eng_mean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/card_eng_mean_margin"
+            android:layout_marginLeft="@dimen/card_eng_mean_margin"
+            android:layout_marginRight="@dimen/card_eng_mean_margin"
+            android:layout_marginTop="@dimen/card_eng_mean_margin_top"
+            android:gravity="center" />
+
+        <com.thanhle.englishvocabulary.view.TextViewAutoResizeMultiline
+            android:id="@+id/tvCardMean"
+            style="@style/card_mean"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tvCardExam"
+            android:layout_marginLeft="@dimen/card_word_margin_left_right"
+            android:layout_marginRight="@dimen/card_word_margin_left_right"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

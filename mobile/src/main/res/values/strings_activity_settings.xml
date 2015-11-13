@@ -1,0 +1,43 @@
+<resources>
+        <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_card_theme">Card Theme</string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">Test User</string>
+
+    <string-array name="pref_card_theme_list">
+        <item>Default Theme</item>
+        <item>Theme 1</item>
+        <item>Theme 2</item>
+        <item>Theme 3</item>
+        <item>Theme 4</item>
+        <item>Theme 5</item>
+        <item>Theme 6</item>
+        <item>Theme 7</item>
+    </string-array>
+
+    <string-array name="pref_card_theme_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_word_notifications">New word notifications</string>
+    <string name="pref_title_wear_notifications">Android Wear notifications</string>
+
+
+</resources>

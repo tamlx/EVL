@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_picker_top_bar_height"
+        android:background="@drawable/img_board"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <com.thanhle.englishvocabulary.view.ProgressWheel
+            android:id="@+id/progressBar1"
+            android:layout_width="@dimen/card_picker_top_bar_height"
+            android:layout_height="@dimen/card_picker_top_bar_height"
+            ProgressWheel:barColor="@color/progress_bar_color_blue"
+            ProgressWheel:barWidth="@dimen/card_picker_progress_bar_width"
+            ProgressWheel:rimColor="@color/progress_bar_rim_color"
+            ProgressWheel:rimWidth="@dimen/card_picker_progress_bar_rim_width"
+            ProgressWheel:textColor="@color/white"
+            ProgressWheel:textSize="@dimen/card_picker_progress_bar_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/progressBar1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvDescription1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/card_picker_description_name_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescription2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_layout"
+                android:text="@string/word_list_count"
+                android:textColor="@color/white"
+                android:textSize="@dimen/card_picker_description_count_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTop"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:id="@+id/rlCardView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5" >
+
+            <View
+                android:id="@+id/fakeView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_centerInParent="true" />
+
+            <View
+                android:id="@+id/cardViewFake1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_alignTop="@id/fakeView"
+                android:layout_marginLeft="@dimen/card_margin_left3"
+                android:layout_marginRight="@dimen/card_margin_right3"
+                android:layout_marginTop="@dimen/card_margin_top3"
+                android:background="@drawable/img_card_background" >
+            </View>
+
+            <View
+                android:id="@+id/cardViewFake2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_alignTop="@id/fakeView"
+                android:layout_marginLeft="@dimen/card_margin_left2"
+                android:layout_marginRight="@dimen/card_margin_right2"
+                android:layout_marginTop="@dimen/card_margin_top2"
+                android:background="@drawable/img_card_background" >
+            </View>
+
+            <com.thanhle.englishvocabulary.view.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/fakeView" />
+
+            <LinearLayout
+                android:id="@+id/viewAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fakeView"
+                android:layout_marginTop="@dimen/common_margin_layout_larger"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/btnAutoAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fakeView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margin_layout_large"
+                android:background="@drawable/blue_button"
+                android:padding="@dimen/common_margin_layout_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize_large" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlWordBoard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgBoardArrow"
+                android:layout_width="@dimen/home_board_top_size"
+                android:layout_height="@dimen/home_board_top_size"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/home_board_top_padding"
+                android:src="@drawable/img_board_top" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/home_board_margin_top"
+                android:background="@drawable/img_board" >
+
+                <TextView
+                    android:id="@+id/tvWordBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_margin_layout_medium"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wordboard_tag_text_size" />
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_color"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/fakeViewGuide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            android:layout_centerInParent="true" />
+
+        <com.thanhle.englishvocabulary.view.CardView
+            android:id="@+id/cardViewGuide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/fakeViewGuide" />
+
+        <TextView
+            android:id="@+id/tvGuideSwipeUp"
+            style="@style/card_pick_guide_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fakeViewGuide"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/img_icon_swipe_up"
+            android:text="@string/guide_swipe_up"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvGuideSwipeDown"
+            style="@style/card_pick_guide_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fakeViewGuide"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/img_icon_swipe_down"
+            android:text="@string/guide_swipe_down"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvGuideSwipeRight"
+            style="@style/card_pick_guide_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fakeViewGuide"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/img_icon_swipe_right"
+            android:text="@string/guide_swipe_right"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvGuideTouchCard"
+            style="@style/card_pick_guide_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fakeViewGuide"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/img_icon_touch"
+            android:text="@string/guide_click_see_mean"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btnAutoAddGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fakeViewGuide"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_margin_layout_large"
+            android:background="@drawable/blue_button"
+            android:padding="@dimen/common_margin_layout_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_textsize_large"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvGuideTouchAdd"
+            style="@style/card_pick_guide_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btnAutoAddGuide"
+            android:layout_below="@id/btnAutoAddGuide"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/img_icon_touch"
+            android:text="@string/guide_click_auto_add"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

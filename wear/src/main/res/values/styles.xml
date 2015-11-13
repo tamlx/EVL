@@ -1,0 +1,41 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.DeviceDefault.Panel">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="card_word">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/card_word_text_size</item>
+        <item name="android:textColor">@color/card_text_color</item>
+    </style>
+
+    <style name="card_mean">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/card_mean_text_size</item>
+        <item name="android:textColor">@color/card_text_color</item>
+    </style>
+
+    <style name="card_phonetically">
+        <item name="android:textSize">@dimen/card_phonetically_text_size</item>
+        <item name="android:textColor">@color/card_text_color</item>
+    </style>
+
+    <style name="card_word_type">
+        <item name="android:textSize">@dimen/card_word_type_text_size</item>
+        <item name="android:textColor">@color/card_text_color</item>
+    </style>
+</resources>

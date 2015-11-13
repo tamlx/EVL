@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/rlCardBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/card_margin_bottom1"
+        android:layout_marginLeft="@dimen/card_margin_left1"
+        android:layout_marginRight="@dimen/card_margin_right1"
+        android:layout_marginTop="@dimen/card_margin_top1"
+        android:background="@drawable/img_card_background"
+        tools:ignore="UselessParent" >
+
+        <com.thanhle.englishvocabulary.AutoResizeTextView
+            android:id="@+id/tvCardMean"
+            style="@style/card_mean"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/card_word_margin_left_right"
+            android:layout_marginRight="@dimen/card_word_margin_left_right"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

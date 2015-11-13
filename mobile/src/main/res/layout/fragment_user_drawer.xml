@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/common_margin_layout_medium">
+
+    <RelativeLayout
+        android:id="@+id/rlUserAvatar"
+        android:layout_width="@dimen/user_avatar_width"
+        android:layout_height="@dimen/user_avatar_width"
+        android:layout_margin="@dimen/common_margin_layout_medium"
+        android:background="@drawable/user_avatar_circle">
+
+        <ImageView
+            android:id="@+id/imgUserAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_icon_user_avatar" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin_layout_medium"
+        android:layout_toRightOf="@id/rlUserAvatar"
+        android:text="@string/app_name"
+        android:textSize="@dimen/common_textsize_xlarge" />
+
+    <TextView
+        android:id="@+id/btnLogout"
+        style="@style/button_blue_white_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/common_margin_layout"
+        android:background="@drawable/test_button"
+        android:padding="10dp"
+        android:text="@string/logout"
+        android:textSize="@dimen/common_textsize_medium" />
+
+    <ListView
+        android:id="@+id/lvNavigationMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnLogout"
+        android:layout_below="@id/rlUserAvatar"
+        android:layout_margin="@dimen/common_margin_layout"></ListView>
+</RelativeLayout>

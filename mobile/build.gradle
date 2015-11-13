@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+    defaultConfig {
+        applicationId "com.thanhle.englishvocabulary"
+        minSdkVersion 11
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    signingConfigs {
+        release {
+            storeFile file("../keystore/keystore.jks")
+            storePassword "Admin123"
+            keyAlias "englishvocabulary"
+            keyPassword "Admin123"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFile 'Unrecognized value'
+            proguardFiles 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    wearApp project(':wear')
+    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile 'com.android.support:support-v4:21.0.0'
+    compile 'com.google.android.gms:play-services:8.1.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile files('libs/httpmime-4.2.5.jar')
+    compile 'com.facebook.android:facebook-android-sdk:4.1.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.google.android.gms:play-services-identity:8.1.0'
+    compile 'com.google.android.gms:play-services-plus:8.1.0'
+    compile files('libs/picasso-2.3.2.jar')
+    compile 'ch.acra:acra:4.6.1'
+    compile files('libs/acra-4.6.1.jar')
+    compile files('libs/mint-4.4.0.jar')
+    compile 'com.splunk.mint:mint:4.4.0'
+    compile 'com.sothree.slidinguppanel:library:3.0.0'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://mint.splunk.com/gradle/"
+    }
+}
+

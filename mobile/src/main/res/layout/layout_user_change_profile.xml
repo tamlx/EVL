@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rUpdateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/common_margin_layout_xlarge2"
+                android:layout_marginRight="@dimen/common_margin_layout_xlarge2"
+                android:layout_marginTop="@dimen/common_margin_layout_larger"
+                android:paddingBottom="@dimen/common_margin_layout_medium">
+
+                <EditText
+                    android:id="@+id/tvUpdateProfileUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_margin_layout_medium"
+                    android:background="@color/gray"
+                    android:hint="@string/update_profile_username"
+                    android:padding="@dimen/common_margin_layout_medium"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/tvOldPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvUpdateProfileUsername"
+                    android:layout_marginBottom="@dimen/common_margin_layout_medium"
+                    android:layout_marginLeft="@dimen/common_margin_layout_medium"
+                    android:layout_marginRight="@dimen/common_margin_layout_medium"
+                    android:hint="@string/update_profile_oldpassword"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/common_margin_layout_medium"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/tvNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvOldPassword"
+                    android:layout_marginBottom="@dimen/common_margin_layout_medium"
+                    android:layout_marginLeft="@dimen/common_margin_layout_medium"
+                    android:layout_marginRight="@dimen/common_margin_layout_medium"
+                    android:hint="@string/update_profile_newpassword"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/common_margin_layout_medium"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/tvConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNewPassword"
+                    android:layout_marginBottom="@dimen/common_margin_layout_medium"
+                    android:layout_marginLeft="@dimen/common_margin_layout_medium"
+                    android:layout_marginRight="@dimen/common_margin_layout_medium"
+                    android:hint="@string/update_profile_newpassword"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/common_margin_layout_medium"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/btnUpdateProfileDone"
+                    style="@style/button_blue_white_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNewPassword"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/common_margin_layout_medium"
+                    android:layout_marginLeft="@dimen/common_margin_layout_large"
+                    android:layout_marginRight="@dimen/common_margin_layout_medium"
+                    android:minWidth="@dimen/login_button_min_width"
+                    android:padding="@dimen/common_margin_layout_medium"
+                    android:text="@string/update_profile_btndone"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
